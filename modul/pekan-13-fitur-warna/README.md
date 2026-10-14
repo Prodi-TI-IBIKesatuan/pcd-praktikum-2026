@@ -19,7 +19,7 @@
 
 ## Tugas praktik
 
-Terima assignment pekan 13 lewat tautan Classroom 50 di Moodle. Repo `pcd-tugas-p13-fitur-warna-<username>` akan dibuat untuk Anda. Kerjakan fungsi berikut di `solusi.py`: `histogram_warna()`, `jarak_euclid()`, `kemiripan_kosinus()`.
+Klik tautan assignment pekan 13 di Moodle lalu tekan *Accept*. Classroom 50 membuatkan repo privat `<kelas>-p13-<username>` (mis. `pcd-karyawan-a-p13-budisantoso`) di organisasi kelas. Kerjakan fungsi berikut di `solusi.py`: `histogram_warna()`, `jarak_euclid()`, `kemiripan_kosinus()`.
 
 | Kriteria autograder | Poin |
 | --- | --- |

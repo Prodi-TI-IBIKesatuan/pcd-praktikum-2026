@@ -20,7 +20,7 @@
 
 ## Tugas praktik
 
-Terima assignment pekan 01 lewat tautan Classroom 50 di Moodle. Repo `pcd-tugas-p01-citra-digital-<username>` akan dibuat untuk Anda. Kerjakan fungsi berikut di `solusi.py`: `info_citra()`, `potong()`.
+Klik tautan assignment pekan 01 di Moodle lalu tekan *Accept*. Classroom 50 membuatkan repo privat `<kelas>-p01-<username>` (mis. `pcd-karyawan-a-p01-budisantoso`) di organisasi kelas. Kerjakan fungsi berikut di `solusi.py`: `info_citra()`, `potong()`.
 
 | Kriteria autograder | Poin |
 | --- | --- |

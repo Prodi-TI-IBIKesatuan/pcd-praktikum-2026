@@ -12,7 +12,7 @@ Setiap tugas dikumpulkan sebagai *commit* ke repo GitHub pribadi Anda dan langsu
 
 ## Alur tugas mingguan
 
-1. **Jumat malam:** buka Moodle, klik tautan assignment pekan ini, tekan *Accept*. Repo `pcd-tugas-pNN-…-<username>` dibuat untuk Anda.
+1. **Jumat malam:** buka Moodle, klik tautan assignment pekan ini (tautan ini membuka Classroom 50, bukan Moodle), lalu tekan *Accept*. Classroom 50 membuatkan repo privat `<kelas>-pNN-<username>` di organisasi kelas, misalnya `pcd-karyawan-a-p03-budisantoso`, berisi salinan template tugas. Syaratnya: nama Anda sudah ada di roster dan undangan organisasi sudah diterima.
 2. **Sabtu–Minggu:** tonton video, lalu buka README modul dan tekan **Buka di Colab**. Kerjakan fungsi di notebook sampai sel *Coba* menampilkan hasil yang benar.
 3. **Kumpulkan:** di github.com buka repo tugas → `solusi.py` → ikon pensil → tempel fungsi Anda → **Commit changes**.
 4. **Lihat nilai:** tanda kuning = sedang dinilai, hijau = semua kriteria lulus, merah = ada yang gagal. Ketuk tanda itu → *Details* untuk melihat kriteria yang gagal dan pesannya. Perbaiki dan commit lagi sesering yang Anda mau sebelum tenggat.

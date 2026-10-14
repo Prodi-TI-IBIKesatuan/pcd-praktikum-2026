@@ -20,7 +20,7 @@
 
 ## Tugas praktik
 
-Terima assignment pekan 05 lewat tautan Classroom 50 di Moodle. Repo `pcd-tugas-p05-aritmatika-logika-<username>` akan dibuat untuk Anda. Kerjakan fungsi berikut di `solusi.py`: `campur()`, `selisih_absolut()`, `terapkan_mask()`.
+Klik tautan assignment pekan 05 di Moodle lalu tekan *Accept*. Classroom 50 membuatkan repo privat `<kelas>-p05-<username>` (mis. `pcd-karyawan-a-p05-budisantoso`) di organisasi kelas. Kerjakan fungsi berikut di `solusi.py`: `campur()`, `selisih_absolut()`, `terapkan_mask()`.
 
 | Kriteria autograder | Poin |
 | --- | --- |

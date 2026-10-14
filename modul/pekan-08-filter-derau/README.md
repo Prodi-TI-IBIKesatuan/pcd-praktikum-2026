@@ -20,7 +20,7 @@
 
 ## Tugas praktik
 
-Terima assignment pekan 08 lewat tautan Classroom 50 di Moodle. Repo `pcd-tugas-p08-filter-derau-<username>` akan dibuat untuk Anda. Kerjakan fungsi berikut di `solusi.py`: `kernel_gauss()`, `filter_median()`, `tambah_garam_merica()`.
+Klik tautan assignment pekan 08 di Moodle lalu tekan *Accept*. Classroom 50 membuatkan repo privat `<kelas>-p08-<username>` (mis. `pcd-karyawan-a-p08-budisantoso`) di organisasi kelas. Kerjakan fungsi berikut di `solusi.py`: `kernel_gauss()`, `filter_median()`, `tambah_garam_merica()`.
 
 | Kriteria autograder | Poin |
 | --- | --- |

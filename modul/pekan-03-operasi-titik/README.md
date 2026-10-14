@@ -20,7 +20,7 @@
 
 ## Tugas praktik
 
-Terima assignment pekan 03 lewat tautan Classroom 50 di Moodle. Repo `pcd-tugas-p03-operasi-titik-<username>` akan dibuat untuk Anda. Kerjakan fungsi berikut di `solusi.py`: `negatif()`, `atur_kecerahan()`, `atur_kontras()`.
+Klik tautan assignment pekan 03 di Moodle lalu tekan *Accept*. Classroom 50 membuatkan repo privat `<kelas>-p03-<username>` (mis. `pcd-karyawan-a-p03-budisantoso`) di organisasi kelas. Kerjakan fungsi berikut di `solusi.py`: `negatif()`, `atur_kecerahan()`, `atur_kontras()`.
 
 | Kriteria autograder | Poin |
 | --- | --- |

@@ -19,7 +19,7 @@
 
 ## Tugas praktik
 
-Terima assignment pekan 11 lewat tautan Classroom 50 di Moodle. Repo `pcd-tugas-p11-morfologi-<username>` akan dibuat untuk Anda. Kerjakan fungsi berikut di `solusi.py`: `erosi()`, `dilasi()`, `opening()`.
+Klik tautan assignment pekan 11 di Moodle lalu tekan *Accept*. Classroom 50 membuatkan repo privat `<kelas>-p11-<username>` (mis. `pcd-karyawan-a-p11-budisantoso`) di organisasi kelas. Kerjakan fungsi berikut di `solusi.py`: `erosi()`, `dilasi()`, `opening()`.
 
 | Kriteria autograder | Poin |
 | --- | --- |

@@ -20,7 +20,7 @@
 
 ## Tugas praktik
 
-Terima assignment pekan 12 lewat tautan Classroom 50 di Moodle. Repo `pcd-tugas-p12-segmentasi-<username>` akan dibuat untuk Anda. Kerjakan fungsi berikut di `solusi.py`: `ambang_otsu()`, `segmentasi_otsu()`, `hitung_objek()`.
+Klik tautan assignment pekan 12 di Moodle lalu tekan *Accept*. Classroom 50 membuatkan repo privat `<kelas>-p12-<username>` (mis. `pcd-karyawan-a-p12-budisantoso`) di organisasi kelas. Kerjakan fungsi berikut di `solusi.py`: `ambang_otsu()`, `segmentasi_otsu()`, `hitung_objek()`.
 
 | Kriteria autograder | Poin |
 | --- | --- |
