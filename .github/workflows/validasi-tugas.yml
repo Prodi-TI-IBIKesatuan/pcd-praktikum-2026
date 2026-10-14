@@ -1,0 +1,50 @@
+# Menjaga mutu template tugas di setiap PR:
+#  - stub solusi.py harus mendapat 0 (tes tidak bisa lulus tanpa dikerjakan),
+#  - kunci jawaban harus mendapat 100 (bila rahasia KUNCI_TOKEN tersedia),
+#  - stub sinkron dengan kunci; notebook, README tugas, dan tabel Classroom 50 sinkron dengan tes.
+name: Validasi tugas
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validasi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      ADA_KUNCI: ${{ secrets.KUNCI_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Pasang dependensi
+        run: python -m pip install -q -r requirements-dev.txt
+      - name: Ambil kunci jawaban (repo privat)
+        if: env.ADA_KUNCI == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: Prodi-TI-IBIKesatuan/pcd-kunci
+          token: ${{ secrets.KUNCI_TOKEN }}
+          path: _kunci
+      - name: Uji template (stub 0, kunci 100)
+        run: |
+          if [ -d _kunci ]; then
+            python tools/uji_template.py --kunci _kunci
+            python tools/buat_stub.py --cek _kunci
+          else
+            echo "::notice::KUNCI_TOKEN belum diatur; hanya memeriksa stub = 0."
+            python tools/uji_template.py
+          fi
+      - name: Notebook latihan sinkron dengan stub
+        run: python tools/buat_notebook.py --cek
+      - name: README tugas sinkron
+        run: python tools/buat_readme_tugas.py --cek
+      - name: Tabel konfigurasi Classroom 50 sinkron
+        run: python tools/buat_konfigurasi_classroom50.py --cek
+      - name: Uji alat bantu
+        run: python -m pytest -q tools/tests

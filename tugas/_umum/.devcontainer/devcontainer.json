@@ -1,0 +1,12 @@
+{
+  "name": "Praktikum Pengolahan Citra Digital",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "postCreateCommand": "pip install --user -r requirements.txt matplotlib jupyter",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-toolsai.jupyter"]
+    },
+    "codespaces": { "openFiles": ["README.md", "solusi.py"] }
+  },
+  "hostRequirements": { "cpus": 2 }
+}

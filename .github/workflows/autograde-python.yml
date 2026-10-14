@@ -1,0 +1,27 @@
+# Reusable workflow: dipanggil oleh setiap repo tugas mahasiswa lewat
+#   uses: Prodi-TI-IBIKesatuan/pcd-praktikum-2026/.github/workflows/autograde-python.yml@v1
+# Repo ini harus publik agar repo privat di organisasi lain boleh memanggilnya.
+name: Autograde Python (reusable)
+on:
+  workflow_call:
+    inputs:
+      python-version:
+        description: Versi Python
+        type: string
+        default: "3.12"
+permissions:
+  contents: read
+jobs:
+  nilai:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ inputs.python-version }}
+          cache: pip
+      - name: Pasang dependensi
+        run: python -m pip install -q -r requirements.txt
+      - name: Jalankan semua tes
+        run: python tests/jalankan_semua.py

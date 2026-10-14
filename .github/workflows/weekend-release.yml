@@ -1,0 +1,66 @@
+# Rilis materi otomatis setiap Jumat 18.00 WIB (11.00 UTC), sesuai KALENDER.csv.
+name: Weekend Release
+on:
+  schedule:
+    - cron: "0 11 * * 5"
+  workflow_dispatch:
+    inputs:
+      pekan:
+        description: Nomor pekan yang dirilis (mis. 09). Kosongkan untuk membaca KALENDER.csv
+        required: false
+permissions:
+  contents: write
+jobs:
+  rilis:
+    runs-on: ubuntu-latest
+    env:
+      ADA_MOODLE: ${{ secrets.MOODLE_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tentukan pekan
+        id: p
+        env:
+          INPUT_PEKAN: ${{ github.event.inputs.pekan }}
+        run: |
+          if [ -n "$INPUT_PEKAN" ]; then
+            NN="$INPUT_PEKAN"
+          else
+            NN=$(awk -F, -v d="$(TZ=Asia/Jakarta date +%F)" '$1==d{print $2}' KALENDER.csv)
+          fi
+          if ! [[ "$NN" =~ ^[0-9]{2}$|^$ ]]; then echo "::error::Nomor pekan harus dua digit, mis. 09"; exit 1; fi
+          [ -z "$NN" ] && echo "Tidak ada rilis terjadwal hari ini."
+          echo "nn=$NN" >> "$GITHUB_OUTPUT"
+      - name: Pastikan modul pekan sudah di-merge
+        if: steps.p.outputs.nn != ''
+        env:
+          NN: ${{ steps.p.outputs.nn }}
+        run: |
+          ls modul/pekan-"$NN"-*/README.md >/dev/null 2>&1 || {
+            echo "::error::Modul pekan $NN belum ada di main. Merge PR-nya dulu."; exit 1; }
+      - name: Terbitkan Release
+        if: steps.p.outputs.nn != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NN: ${{ steps.p.outputs.nn }}
+        run: |
+          TAG="P$NN"
+          if gh release view "$TAG" >/dev/null 2>&1; then echo "$TAG sudah dirilis."; exit 0; fi
+          DIR=$(find modul -maxdepth 1 -type d -name "pekan-$NN-*" | head -1)
+          gh release create "$TAG" --target main --title "Pekan $NN" --notes-file "$DIR/README.md"
+      - name: Tampilkan aktivitas Moodle (opsional)
+        if: steps.p.outputs.nn != '' && env.ADA_MOODLE == 'true'
+        env:
+          MOODLE_TOKEN: ${{ secrets.MOODLE_TOKEN }}
+          MOODLE_URL: ${{ vars.MOODLE_URL }}
+          SEMUA_VARS: ${{ toJSON(vars) }}
+          NN: ${{ steps.p.outputs.nn }}
+        run: |
+          # Variabel repo MODUL_PNN = daftar cmid aktivitas Moodle pekan itu, dipisah spasi.
+          IDS="$(jq -r --arg k "MODUL_P$NN" '.[$k] // empty' <<<"$SEMUA_VARS")"
+          [ -z "$IDS" ] && { echo "::warning::Variabel MODUL_P$NN kosong; unhide manual di Moodle."; exit 0; }
+          for CMID in $IDS; do
+            curl -fsS "$MOODLE_URL/webservice/rest/server.php" \
+              -d wstoken="$MOODLE_TOKEN" -d moodlewsrestformat=json \
+              -d wsfunction=core_course_edit_module -d action=show -d id="$CMID"
+            echo
+          done

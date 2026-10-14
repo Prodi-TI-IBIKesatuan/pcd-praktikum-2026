@@ -1,0 +1,5 @@
+# Semua perubahan butuh persetujuan dosen pengampu PCD.
+*                     @Prodi-TI-IBIKesatuan/dosen-pcd
+# Tes dan alat bantu boleh disetujui dosen ATAU asisten DLS.
+/tugas/**/tests/      @Prodi-TI-IBIKesatuan/dosen-pcd @Prodi-TI-IBIKesatuan/dls
+/tools/               @Prodi-TI-IBIKesatuan/dosen-pcd @Prodi-TI-IBIKesatuan/dls

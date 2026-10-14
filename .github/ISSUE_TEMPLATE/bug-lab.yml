@@ -1,0 +1,36 @@
+name: Kendala Lab
+description: Laporkan masalah teknis Colab, Codespaces, autograder, atau Classroom 50
+title: "[Lab] <ringkasan masalah>"
+labels: ["bug-lab"]
+body:
+  - type: markdown
+    attributes:
+      value: "Jangan menempel kode jawaban, token, atau NIM di sini — issue ini dapat dibaca publik."
+  - type: dropdown
+    id: tempat
+    attributes:
+      label: Di mana masalahnya?
+      options: [Google Colab, GitHub Codespaces, Tanda merah/hijau (autograder), Classroom 50 / undangan, Lainnya]
+    validations: { required: true }
+  - type: input
+    id: pekan
+    attributes: { label: Pekan / tugas, placeholder: "p07-konvolusi" }
+    validations: { required: true }
+  - type: dropdown
+    id: perangkat
+    attributes:
+      label: Perangkat
+      options: [Smartphone, Laptop/PC]
+  - type: textarea
+    id: gejala
+    attributes:
+      label: Apa yang terjadi dan pesan galatnya
+      description: Salin pesan GAGAL dari halaman Actions. Lampirkan tangkapan layar bila perlu.
+    validations: { required: true }
+  - type: checkboxes
+    id: cek
+    attributes:
+      label: Sudah dicoba
+      options:
+        - label: Membaca bagian Troubleshooting di docs/panduan-mahasiswa.md
+        - label: Sudah commit ulang / menjalankan ulang workflow

@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.ipynb_checkpoints/
+build/
+# Kunci jawaban TIDAK PERNAH masuk repo publik ini; simpan di repo privat pcd-kunci.
+kunci/
+_kunci/
+# Roster dan ekspor nilai berisi data pribadi.
+roster*.csv
+skor-*.csv
+moodle-*.csv
