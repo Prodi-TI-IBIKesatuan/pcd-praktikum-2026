@@ -1,0 +1,29 @@
+name: Permintaan Konten
+description: Minta DLS membuat video, modul, soal, atau template tugas
+title: "[Pekan NN] <topik>"
+labels: ["dls"]
+body:
+  - type: dropdown
+    id: jenis
+    attributes:
+      label: Jenis konten
+      options: [Video, Modul, Soal kuis, Template tugas + tes, Notebook latihan]
+      multiple: true
+    validations: { required: true }
+  - type: input
+    id: pekan
+    attributes: { label: Pekan, placeholder: "09" }
+    validations: { required: true }
+  - type: textarea
+    id: capaian
+    attributes:
+      label: Capaian belajar dan poin wajib
+      description: Ambil dari RPS. Satu poin per baris.
+    validations: { required: true }
+  - type: input
+    id: durasi
+    attributes: { label: Durasi video target (menit), placeholder: "10-15" }
+  - type: input
+    id: tenggat
+    attributes: { label: Tenggat siap review, placeholder: "Kamis, 2027-03-04" }
+    validations: { required: true }

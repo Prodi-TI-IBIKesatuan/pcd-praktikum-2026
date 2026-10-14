@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Keberatan nilai tugas
+    url: https://github.com/Prodi-TI-IBIKesatuan/pcd-praktikum-2026/blob/main/docs/panduan-mahasiswa.md#keberatan-nilai
+    about: Keberatan ditulis di feedback pull request repo tugas Anda sendiri, bukan di sini.

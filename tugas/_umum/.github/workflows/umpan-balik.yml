@@ -1,0 +1,10 @@
+# Umpan balik instan di setiap push. Nilai resmi tetap dikumpulkan Classroom 50.
+name: Umpan balik tes
+on:
+  push:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tes:
+    uses: Prodi-TI-IBIKesatuan/pcd-praktikum-2026/.github/workflows/autograde-python.yml@v1
