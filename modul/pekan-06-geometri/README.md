@@ -19,7 +19,7 @@
 
 ## Tugas praktik
 
-Terima assignment pekan 06 lewat tautan Classroom 50 di Moodle. Repo `pcd-tugas-p06-geometri-<username>` akan dibuat untuk Anda. Kerjakan fungsi berikut di `solusi.py`: `balik_horizontal()`, `rotasi_90()`, `ubah_ukuran_terdekat()`.
+Klik tautan assignment pekan 06 di Moodle lalu tekan *Accept*. Classroom 50 membuatkan repo privat `<kelas>-p06-<username>` (mis. `pcd-karyawan-a-p06-budisantoso`) di organisasi kelas. Kerjakan fungsi berikut di `solusi.py`: `balik_horizontal()`, `rotasi_90()`, `ubah_ukuran_terdekat()`.
 
 | Kriteria autograder | Poin |
 | --- | --- |

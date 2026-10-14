@@ -20,7 +20,7 @@
 
 ## Tugas praktik
 
-Terima assignment pekan 04 lewat tautan Classroom 50 di Moodle. Repo `pcd-tugas-p04-histogram-<username>` akan dibuat untuk Anda. Kerjakan fungsi berikut di `solusi.py`: `histogram()`, `ekualisasi()`.
+Klik tautan assignment pekan 04 di Moodle lalu tekan *Accept*. Classroom 50 membuatkan repo privat `<kelas>-p04-<username>` (mis. `pcd-karyawan-a-p04-budisantoso`) di organisasi kelas. Kerjakan fungsi berikut di `solusi.py`: `histogram()`, `ekualisasi()`.
 
 | Kriteria autograder | Poin |
 | --- | --- |

@@ -20,7 +20,7 @@
 
 ## Tugas praktik
 
-Terima assignment pekan 07 lewat tautan Classroom 50 di Moodle. Repo `pcd-tugas-p07-konvolusi-<username>` akan dibuat untuk Anda. Kerjakan fungsi berikut di `solusi.py`: `konvolusi2d()`, `filter_rerata()`.
+Klik tautan assignment pekan 07 di Moodle lalu tekan *Accept*. Classroom 50 membuatkan repo privat `<kelas>-p07-<username>` (mis. `pcd-karyawan-a-p07-budisantoso`) di organisasi kelas. Kerjakan fungsi berikut di `solusi.py`: `konvolusi2d()`, `filter_rerata()`.
 
 | Kriteria autograder | Poin |
 | --- | --- |

@@ -20,7 +20,7 @@
 
 ## Tugas praktik
 
-Terima assignment pekan 02 lewat tautan Classroom 50 di Moodle. Repo `pcd-tugas-p02-ruang-warna-<username>` akan dibuat untuk Anda. Kerjakan fungsi berikut di `solusi.py`: `ke_grayscale()`, `bgr_ke_rgb()`, `ke_biner()`.
+Klik tautan assignment pekan 02 di Moodle lalu tekan *Accept*. Classroom 50 membuatkan repo privat `<kelas>-p02-<username>` (mis. `pcd-karyawan-a-p02-budisantoso`) di organisasi kelas. Kerjakan fungsi berikut di `solusi.py`: `ke_grayscale()`, `bgr_ke_rgb()`, `ke_biner()`.
 
 | Kriteria autograder | Poin |
 | --- | --- |

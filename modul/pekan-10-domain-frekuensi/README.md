@@ -20,7 +20,7 @@
 
 ## Tugas praktik
 
-Terima assignment pekan 10 lewat tautan Classroom 50 di Moodle. Repo `pcd-tugas-p10-domain-frekuensi-<username>` akan dibuat untuk Anda. Kerjakan fungsi berikut di `solusi.py`: `spektrum_magnitudo()`, `mask_lingkaran()`, `lowpass_ideal()`.
+Klik tautan assignment pekan 10 di Moodle lalu tekan *Accept*. Classroom 50 membuatkan repo privat `<kelas>-p10-<username>` (mis. `pcd-karyawan-a-p10-budisantoso`) di organisasi kelas. Kerjakan fungsi berikut di `solusi.py`: `spektrum_magnitudo()`, `mask_lingkaran()`, `lowpass_ideal()`.
 
 | Kriteria autograder | Poin |
 | --- | --- |

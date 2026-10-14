@@ -20,7 +20,7 @@
 
 ## Tugas praktik
 
-Terima assignment pekan 14 lewat tautan Classroom 50 di Moodle. Repo `pcd-tugas-p14-temu-kembali-<username>` akan dibuat untuk Anda. Kerjakan fungsi berikut di `solusi.py`: `cari_mirip()`, `presisi_pada_k()`.
+Klik tautan assignment pekan 14 di Moodle lalu tekan *Accept*. Classroom 50 membuatkan repo privat `<kelas>-p14-<username>` (mis. `pcd-karyawan-a-p14-budisantoso`) di organisasi kelas. Kerjakan fungsi berikut di `solusi.py`: `cari_mirip()`, `presisi_pada_k()`.
 
 | Kriteria autograder | Poin |
 | --- | --- |

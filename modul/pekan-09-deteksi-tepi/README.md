@@ -20,7 +20,7 @@
 
 ## Tugas praktik
 
-Terima assignment pekan 09 lewat tautan Classroom 50 di Moodle. Repo `pcd-tugas-p09-deteksi-tepi-<username>` akan dibuat untuk Anda. Kerjakan fungsi berikut di `solusi.py`: `sobel()`, `tepi_canny()`, `rasio_tepi()`.
+Klik tautan assignment pekan 09 di Moodle lalu tekan *Accept*. Classroom 50 membuatkan repo privat `<kelas>-p09-<username>` (mis. `pcd-karyawan-a-p09-budisantoso`) di organisasi kelas. Kerjakan fungsi berikut di `solusi.py`: `sobel()`, `tepi_canny()`, `rasio_tepi()`.
 
 | Kriteria autograder | Poin |
 | --- | --- |
