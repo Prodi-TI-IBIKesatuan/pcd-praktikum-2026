@@ -1,6 +1,5 @@
 # Praktikum Pengolahan Citra Digital 2026
 
-Repo materi dan otomasi praktikum **Pengolahan Citra Digital (PCD)** kelas karyawan, Program Studi Teknologi Informasi, IBI Kesatuan. Repo ini menjalankan rencana *Transformasi Ekosistem Kelas Karyawan TI*: materi dirilis otomatis tiap Jumat malam, mahasiswa berlatih dari HP lewat Google Colab, dan setiap tugas dinilai otomatis saat di-*commit*.
 
 [![Validasi tugas](https://github.com/Prodi-TI-IBIKesatuan/pcd-praktikum-2026/actions/workflows/validasi-tugas.yml/badge.svg)](https://github.com/Prodi-TI-IBIKesatuan/pcd-praktikum-2026/actions/workflows/validasi-tugas.yml)
 
